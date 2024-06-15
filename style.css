@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vw;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card {
+    background: linear-gradient(rgba(51, 47, 109, 0.658), rgba(175, 18, 70, 0.65));
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 22px;
+    box-shadow: 0 4px 30px 0 rgb(140, 139, 182);
+}
+.container .card h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #141730;
+    box-shadow: 0 4px 30px 0 rgb(140, 139, 182);
+    border-radius: 16px;
+    padding: 12px;
+}
+.container .card p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.23rem;
+    color: whitesmoke;
+}
+.container .card .box{
+    min-width: 100px;
+    height: 150px;
+    background-color: rgba(240, 248, 255, 0.541);
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141730;
+}
+.container .card .choices{
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .choices button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: none;
+    color: #141730;
+    font-family: inherit;
+    font-weight: 700;
+}
+.container .card .choices button i{
+    font-size: 1.8rem;
+}
+.container .card .choices button:hover{
+    background-color: rgba(14, 53, 126, 0.596);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+@media (max-width:600px) {
+    .container .card {
+        max-width: fit-content;
+    }
+    
+}
+@media (max-width:412px) {
+    .container .card {
+        max-width: fit-content;
+    }
+    .container .card h1{
+        font-size: 1.7rem;
+        margin-left: 1rem;
+    }
+    
+}
+@media (max-width:384px) {
+    .container .card {
+        max-width: fit-content;
+    }
+    .container .card h1{
+        font-size: 1.55rem;
+        margin-left: 0.5rem;
+        margin-top: 5rem;
+    }
+    .container .card .choices button{
+        width: 90px;
+        padding: 0.8rem;
+        border-radius: 18px;
+        
+    }
+
+}
