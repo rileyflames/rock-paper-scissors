@@ -145,18 +145,44 @@ body{
         overflow: hidden;
     }
     .container .card {
+        background: linear-gradient(rgba(231, 233, 236, 0.664), rgba(121, 121, 145, 0.692), rgba(209, 213, 226, 0.699));
         max-width: fit-content;
     }
+    .container .card #box{
+        min-width: 85px;
+        height: 95px;
+        padding: 1rem;
+    }
+
     .container .card h1{
-        font-size: 1.55rem;
+        font-size: 1.2rem;
         margin-left: 0.5rem;
-        margin-top: 5rem;
     }
     .container .card .choices button{
-        width: 90px;
+        width: 60px;
         padding: 0.8rem;
         border-radius: 18px;
+        color: rgb(94, 14, 18);
         
+    }
+    .container .card .choices button:hover{
+        background-color: rgb(11, 36, 13);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #fff;
+    }
+    .container .card .choices button i{
+        font-size: 1.6rem;
+    }
+    .wins-loses{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wins-loses > *{
+        color: #141730;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 0;
     }
 
 }
