@@ -10,12 +10,22 @@
     <div class="container">
         <div class="card">
             <h1>rock | paper | scissors</h1>
-            <div class="box">answer here</div>
+            <p>🤖</p>
+            <div id="box">
+                <p id="message">Let's play!😀</p>
+                <p>🤖 <span id="robot">--</span></p>
+            </div>
             <p>Pick your choice</p>
             <div class="choices">
-                <button id="rock"><i class="fa-solid fa-hand-back-fist"></i>rock</button>
-                <button id="papper"><i class="fa-solid fa-hand"></i>paper</button>
-                <button id="scissors"><i class="fa-solid fa-hand-scissors"></i>scissors</button>
+                <button onclick="playgame('rock')" ><i class="fa-solid fa-hand-back-fist"></i>rock</button>
+
+                <button onclick="playgame('paper')"><i class="fa-solid fa-hand"></i>paper</button>
+
+                <button onclick="playgame('scissors')"><i class="fa-solid fa-hand-scissors"></i>scissors</button>
+            </div>
+            <div class="wins-loses">
+                <div>wins: <span id="wins">0</span></div>
+                <div>loses: <span id="loses">0</span> </div> 
             </div>
         </div>
     </div>

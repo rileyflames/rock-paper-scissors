@@ -18,7 +18,7 @@ body{
     overflow-y: hidden;
 }
 .container .card {
-    background: linear-gradient(rgba(51, 47, 109, 0.658), rgba(175, 18, 70, 0.65));
+    background: linear-gradient(rgba(51, 47, 109, 0.658), rgba(175, 18, 70, 0.65), rgba(255, 255, 255));
     max-width:600px;
     display: flex;
     flex-direction: column;
@@ -35,13 +35,19 @@ body{
     border-radius: 16px;
     padding: 12px;
 }
+.container .card #box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
 .container .card p{
     text-align: center;
-    font-weight: 500;
-    font-size: 1.23rem;
-    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.13rem;
+    color: #141730;
 }
-.container .card .box{
+.container .card #box{
     min-width: 100px;
     height: 150px;
     background-color: rgba(240, 248, 255, 0.541);
@@ -81,6 +87,34 @@ body{
     transition: all 0.3s ease;
     color: #fff;
 }
+
+.wins-loses{
+    text-align: center;
+}
+.wins-loses > *{
+    color: #141730;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1.1rem;
+}
+#wins, #loses{
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 50px;
+    padding: 0.11rem 0.2rem;
+}
+
+.goldenText, #wins{
+    color: goldenrod;
+}
+.redText, #loses{
+    color: red;
+}
+.green{
+    color: greenyellow;
+}
+
+
 @media (max-width:600px) {
     .container .card {
         max-width: fit-content;
